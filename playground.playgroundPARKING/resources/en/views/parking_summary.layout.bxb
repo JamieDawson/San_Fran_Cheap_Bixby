@@ -1,0 +1,20 @@
+layout {
+  match: Grab_everything (this)
+  mode (Summary)
+
+  content {
+    section {
+      content {
+        for-each (this.location_name)
+        {
+          as (x) {
+            paragraph {
+            value ("#{value(this.location_name)}")
+            style (Label_M_Soft)
+            }
+          }
+        }
+      }
+    }
+  }
+}

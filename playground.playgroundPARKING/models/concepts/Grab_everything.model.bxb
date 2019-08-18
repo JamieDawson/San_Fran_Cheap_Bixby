@@ -1,0 +1,7 @@
+structure (Grab_everything) {
+  description (a struct to grab everything!)
+  property (location_name) {
+    type (Location)
+    min (Optional) max (One)
+  }
+}

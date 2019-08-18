@@ -1,0 +1,11 @@
+action (Find_places) {
+  type(Search)
+  description (Help user find parking)
+  collect {
+    input (the_word) {
+      type (Location)
+      min (Optional) max (One)
+    }
+  }
+  output (Grab_everything)
+}

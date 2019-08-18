@@ -1,0 +1,5 @@
+train (t-k272ucae22nkuwqcgl59w433j) {
+  utterance ("[g:Find_places] show me (parking)[v:Location]")
+  plan (Y2Bm0CnISaxML8ovzUvRQzADHIO8Pf3c9dyLEpPiU8tSiypLMjLz0hk08Kp2y8xLiQcKJ6cWM6jiVemTn5xYkpmfx8DEwAjEDECSkQEEoHwA)
+  last-modified (1566089514539)
+}

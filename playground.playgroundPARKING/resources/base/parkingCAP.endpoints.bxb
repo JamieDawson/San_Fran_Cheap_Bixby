@@ -1,0 +1,8 @@
+endpoints {
+  action-endpoints {
+    action-endpoint (Find_places) {
+      accepted-inputs (the_word)
+      local-endpoint (find_places.js)
+    }
+  }
+}
