@@ -9,7 +9,10 @@ module.exports.function = function find_places (the_word) {
 
     for (i = 0; i < 2; i++){
     template = ({
-      location_name: "abc"
+      location_name: "665 Sacramento St",
+      image_URL: {
+        url: "/images/wut.png"
+        }
      });
     results.push(template)
     console.log(results)

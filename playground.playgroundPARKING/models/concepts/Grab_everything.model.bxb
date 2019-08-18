@@ -1,7 +1,18 @@
 structure (Grab_everything) {
   description (a struct to grab everything!)
+  
+  
   property (location_name) {
     type (Location)
-    min (Optional) max (One)
+    min (Optional) max (Many)
   }
+
+  property (image_URL) {
+    type (image.Image)
+    min (Optional) max (One)
+    visibility (Private)
+  }
+
+
+
 }

@@ -12,6 +12,17 @@ layout {
             value ("#{value(this.location_name)}")
             style (Label_M_Soft)
             }
+            paragraph {
+              value ("test")
+            }
+            paragraph {
+              value ("2")
+            }
+            
+          image {
+          object-fit (Contain)
+           url("#{value(this.image_URL.url)}")
+          } 
           }
         }
       }

@@ -10,4 +10,14 @@ capsule {
     modern-prompt-rejection
     support-halt-effect-in-computed-inputs
   }
+
+  capsule-imports {
+   import (viv.core) {
+     as (core)
+   }
+   import (viv.image) {
+     as (image) version (2.12.5)
+   }
+  }
+
 }
