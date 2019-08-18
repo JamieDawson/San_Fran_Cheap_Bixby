@@ -8,6 +8,7 @@ layout {
         for-each (this.location_name)
         {
           as (x) {
+
             paragraph {
             value ("Location name: #{value(this.location_name)}")
             style (Label_M_Soft)
@@ -18,18 +19,16 @@ layout {
             style (Label_M_Soft)
             }
 
+            paragraph {
+              value ("Near #{value(this.location_near)} ------ Prices starting at #{value(this.location_price)}")
+              style(Label_M_Soft)
+            }
+
             image {
               object-fit (Cover)
               lightbox-enabled (false)
               url("#{value(this.google_map_image.url)}")
             } 
-
-            //  attribution-link { //youtube linke for compitition
-            //    label {
-            //      template ("Click here get directions to #{value(this.location_name)}!")
-            //     }
-            //     url ("#{value(this.google_link)}")
-            //  }
           }
         }
       }

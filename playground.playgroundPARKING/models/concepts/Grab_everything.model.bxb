@@ -22,6 +22,19 @@ structure (Grab_everything) {
     visibility (Private)
   }
 
+    property (location_near) {
+    type (Location)
+    min (Optional) max (Many)
+    visibility (Private)
+  }
+
+    property (location_price) {
+    type (Location)
+    min (Optional) max (Many)
+    visibility (Private)
+  }
+
+
 //for google map image
   property (google_map_image) {
     type (image.Image)
@@ -29,12 +42,14 @@ structure (Grab_everything) {
     visibility (Private)
   }
 
+
+
   //for google photos I found online
-  // property (google_photo_image) {
-  //   type (image.Image)
-  //   min (Optional) max (Many)
-  //   visibility (Private)
-  // }
+  property (google_photo_image) {
+    type (image.Image)
+    min (Optional) max (Many)
+    visibility (Private)
+  }
 
   //Link for Google search
     property (google_link) {

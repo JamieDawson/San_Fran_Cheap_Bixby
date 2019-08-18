@@ -8,7 +8,7 @@ layout {
 
             paragraph {
             value ("#{value(this.location_name)}")
-            style (Label_M_Soft)
+            style (Title_M)
             }
             
             image {
@@ -16,6 +16,12 @@ layout {
               lightbox-enabled (false)
               url("#{value(this.google_map_image.url)}")
             } 
+
+            image {
+              object-fit (Contain)
+              lightbox-enabled (false)
+              url("#{value(this.google_photo_image.url)}")
+            }             
 
             paragraph {
               value ("#{value(this.location_description)}")
