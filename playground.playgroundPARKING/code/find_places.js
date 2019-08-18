@@ -13,6 +13,8 @@ module.exports.function = function find_places (the_word) {
   "1355 Fulton Street Garage", //6
   "Hills Plaza Garage", //7
   "Sp+ Pier 29.5 Garage", //8
+  "Nob Hill Masonic Center Garage", //9
+  "1625 Powell St. Garage", //10
   ] 
 
   var loc_add = [
@@ -24,6 +26,8 @@ module.exports.function = function find_places (the_word) {
   "1355 Fulton St", //6
   "25 Folson St", //7
   "Pier 29.5 Embarcadero", //8
+  "1101 California St", //9
+  "1625 Powell St", //10
   ]
 
   var loc_near = [
@@ -35,6 +39,8 @@ module.exports.function = function find_places (the_word) {
   "Western Addition", //6
   "South Beach", //7
   "Fishermans Wharf", //8
+  "Polk Gulch", //9
+  "North Beach", //10
   ]
 
   var price = [
@@ -46,6 +52,8 @@ module.exports.function = function find_places (the_word) {
   "$6",  //6
   "$10", //7
   "15", //8
+  "10", //9
+  "13",
   ]
 
   var img_go_map = [
@@ -57,6 +65,8 @@ module.exports.function = function find_places (the_word) {
   "images/1355_go.png", //6
   "images/25_go.png", //7
   "images/29_5_go.png", //8
+  "images/1101_go.png", //9
+  "images/1625_go.png" //10
   ]  
 
   var img_go_pho = [
@@ -68,6 +78,8 @@ module.exports.function = function find_places (the_word) {
  "images/1355_photo.png", //6
  "images/25_photo.png",  //7
  "images/29_5_photo.png", //8
+ "images/1101_photo.png", //9
+ "images/1625_photo.png", //10
  ]
 
   var loc_des = [
@@ -79,6 +91,8 @@ module.exports.function = function find_places (the_word) {
   "Affordable valet parking in Western Addition. Very convenient to The Independent, The Fillmore, nearby parks, shops, and restaurants.",
   "Secure and affordable parking at the Hills Plaza in downtown San Francisco. Just a few minutes to the Ferry Building, Rincon Park, and Emerald Park.",
   "Secure and affordable indoor garage in the Embarcadero neighborhood. Perfect parking for Exploratorium, Alcatraz Tours, and Fisherman's Wharf.", // 8
+  "Secure and affordable indoor garage in downtown San Francisco. Just across from Grace Cathedral and a few minutes to the Cable Car Museum, Marines Memorial Theatre, Union Square, and Curran Theatre. \n For monthly parking inquiries please call the garage at 415-474-1567.",
+  "Excellent value in North Beach. Close to Cobb's Comedy Club and Beach Blanket Babylon.",
   ]
 
   var go_link = [
@@ -90,13 +104,15 @@ module.exports.function = function find_places (the_word) {
   "https://www.google.com/maps/place/1355+Fulton+St,+San+Francisco,+CA+94117/@37.7764169,-122.4412157,17z/data=!3m1!4b1!4m5!3m4!1s0x808580b1c5db9151:0x3138b5836d563c5b!8m2!3d37.7764169!4d-122.439027",
   "https://www.google.com/maps?q=hills+plaza+garage+san+francisco&um=1&ie=UTF-8&sa=X&ved=0ahUKEwjhmfHcso3kAhVGip4KHW-RAEQQ_AUIESgB",
   "https://www.google.com/maps/search/pier+29.5+embarcadero/@37.7977988,-122.4154186,14z/data=!3m1!4b1", 
-  ]
+  "https://www.google.com/maps/place/Masonic+Temple/@37.7953171,-122.424204,14z/data=!4m8!1m2!2m1!1snob+hill+masonic+center+garage!3m4!1s0x0:0xde5a313ea43aa9df!8m2!3d37.7912566!4d-122.4127954",
+  "https://www.google.com/maps/place/Border+Parking/@37.799675,-122.4132917,17z/data=!3m1!4b1!4m5!3m4!1s0x808580f196492f0f:0xffee396f92147456!8m2!3d37.799675!4d-122.411103"
+]
 
 //CHANGE NUMBER IN FOR LOOP!!!
 
   if (the_word == "parking")
   {
-    for (i = 0; i < 8; i++){
+    for (i = 0; i < 10; i++){
     template = ({
       location_name: loc_name[i],
       location_address: loc_add[i],
