@@ -6,7 +6,7 @@ module.exports.function = function find_places (the_word) {
 
   var loc_name = ["550 Kearny Garage", "Test1_locname"]
   var loc_add = ["665 Sacramento St", "Test2_Addname"]
-  var img_go_map = ["wut.png", "wut.png"] 
+  var img_go_map = ["images/wut.png", "images/wut.png"] 
  // var img_go_pho = ["550_kearny_parking_photo.png", "550_kearny_parking_photo.png"]
   var loc_des = ["HOURS: \n Mon - Thurs - 6am to 9pm \nFri - 6am - 11pm \nSat - 9am - 11pm \nsun - 9am - 9pm \n\nMax per day(mon - thurs) - 30$ \nMax per day (Fri - Sun) 15$\n",
   "stufff"]
