@@ -1,22 +1,45 @@
 structure (Grab_everything) {
   description (a struct to grab everything!)
   
-  
+  //Name of the location
   property (location_name) {
     type (Location)
     min (Optional) max (Many)
-  }
-
-  property (image_URL) {
-    type (image.Image)
-    min (Optional) max (One)
     visibility (Private)
   }
+
+//Name of the address location
+  property (location_address) {
+    type (Location)
+    min (Optional) max (Many)
+    visibility (Private)
+  }
+
+//Description of the location. Mostly prices and whatnot
+  property (location_description) {
+    type (Location)
+    min (Optional) max (Many)
+    visibility (Private)
+  }
+
+//for google map image
+  property (google_map_image) {
+    type (image.Image)
+    min (Optional) max (Many)
+    visibility (Private)
+  }
+
+  //for google photos I found online
+  // property (google_photo_image) {
+  //   type (image.Image)
+  //   min (Optional) max (Many)
+  //   visibility (Private)
+  // }
 
   //Link for Google search
     property (google_link) {
     type (core.Text)
-    min (Optional) max (One)
+    min (Optional) max (Many)
     visibility (Private)
   }
 

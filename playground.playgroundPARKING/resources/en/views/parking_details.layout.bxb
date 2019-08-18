@@ -1,0 +1,33 @@
+layout {
+  match: Grab_everything (this)
+  mode (Details)
+
+  content {
+    section {
+      content {
+
+            paragraph {
+            value ("#{value(this.location_name)}")
+            style (Label_M_Soft)
+            }
+            
+            image {
+              object-fit (Contain)
+              lightbox-enabled (false)
+              url("#{value(this.google_map_image.url)}")
+            } 
+
+            paragraph {
+              value ("#{value(this.location_description)}")
+            }
+
+             attribution-link { //youtube linke for compitition
+               label {
+                 template ("Click here get directions to #{value(this.location_name)}!")
+                }
+                url ("#{value(this.google_link)}")
+             }
+          }
+        }
+  }
+}

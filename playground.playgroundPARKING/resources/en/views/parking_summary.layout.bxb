@@ -9,22 +9,27 @@ layout {
         {
           as (x) {
             paragraph {
-            value ("#{value(this.location_name)}")
+            value ("Location name: #{value(this.location_name)}")
             style (Label_M_Soft)
             }
-            
+
+            paragraph {
+            value ("Location address: #{value(this.location_address)}")
+            style (Label_M_Soft)
+            }
+
             image {
-              object-fit (Contain)
-              url("#{value(this.image_URL.url)}")
+              object-fit (Cover)
+              lightbox-enabled (false)
+              url("#{value(this.google_map_image.url)}")
             } 
 
-        attribution-link { //youtube linke for compitition
-          label {
-            template ("Click here get directions to this location!")
-          }
-          url ("#{value(this.google_link)}")
-        }
-
+            //  attribution-link { //youtube linke for compitition
+            //    label {
+            //      template ("Click here get directions to #{value(this.location_name)}!")
+            //     }
+            //     url ("#{value(this.google_link)}")
+            //  }
           }
         }
       }
