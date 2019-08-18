@@ -110,8 +110,7 @@ module.exports.function = function find_places (the_word) {
 
 //CHANGE NUMBER IN FOR LOOP!!!
 
-  if (the_word == "parking")
-  {
+
     for (i = 0; i < 10; i++){
     template = ({
       location_name: loc_name[i],
@@ -130,7 +129,7 @@ module.exports.function = function find_places (the_word) {
     results.push(template)
     console.log(results)
     }
-  }
+  
 
   return results
 }

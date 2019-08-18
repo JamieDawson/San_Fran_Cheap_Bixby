@@ -1,0 +1,5 @@
+train (t-9p7c0w2ug5t6dinds9d5ux2h2) {
+  utterance ([g:Find_places] show me where I can park my car)
+  plan (Y2Bi0CnISaxML8ovzUvRQzADHIO8Pf3c9dyLEpPiU8tSiypLMjLz0hk08Kp2y8xLiQcKJ6cWMzACIQMUA0kA)
+  last-modified (1566169363474)
+}

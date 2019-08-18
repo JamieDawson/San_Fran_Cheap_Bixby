@@ -1,0 +1,7 @@
+hints {
+  uncategorized {
+    utterance (Where are affordable places I can park my van?)
+    utterance (Recommend cheap parking garages.)
+    utterance (I need a cheap place to park!)
+  }
+}

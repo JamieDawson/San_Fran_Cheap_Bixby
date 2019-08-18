@@ -1,0 +1,21 @@
+capsule-info {
+  display-name (San Fran Cheap)
+  description (Want to travel to San Francisco but can't find affordable parking? Then use San Fran Cheap to find the cheapest options in San Francisco! )
+  //privacy-policy-url () //NOT NEEDED
+  //terms-url () //NOT NEEDED
+  search-keywords {
+    keyword (san francisco)
+    keyword (parking)
+    keyword (garage)
+  }
+  dispatch-name (San Fran Cheap)
+  dispatch-aliases {
+    alias (SanFran Cheap)
+  }
+  action-bg-color (#FFC50A)
+  action-fg-color (#443D32)
+ // android-app-id (myActionId)
+  developer-name (Jamie Dawson)
+  icon-asset (/images/icons/san_fran_cheap.png)
+
+}
