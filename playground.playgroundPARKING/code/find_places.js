@@ -12,7 +12,8 @@ module.exports.function = function find_places (the_word) {
       location_name: "665 Sacramento St",
       image_URL: {
         url: "/images/wut.png"
-        }
+        },
+      google_link: "https://www.google.com/"
      });
     results.push(template)
     console.log(results)

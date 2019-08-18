@@ -13,6 +13,11 @@ structure (Grab_everything) {
     visibility (Private)
   }
 
-
+  //Link for Google search
+    property (google_link) {
+    type (core.Text)
+    min (Optional) max (One)
+    visibility (Private)
+  }
 
 }
