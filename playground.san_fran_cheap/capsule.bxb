@@ -11,6 +11,11 @@ capsule {
     support-halt-effect-in-computed-inputs
   }
 
+
+  store-sections {
+    section (TravelAndTransportation)
+  }
+
   capsule-imports {
    import (viv.core) {
      as (core)
